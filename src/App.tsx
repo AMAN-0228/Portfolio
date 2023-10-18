@@ -1,15 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import About from './components/About'
+import Header from './components/Header'
+import Introduction from './components/Introduction'
+import ProfilePic from './components/ProfilePic'
+import ProgressBar from './components/ProgressBar'
+import Sidebar from './components/Sidebar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className='text-sm hover:text-slate-200'>hello</h1>
-    </>
+    <div className='w-screen'>
+      <Header/>
+      <Sidebar/>
+      <div className='ml-[90px] grid md:grid-cols-3'>
+        <div className='col-span-2 '>
+          <Introduction/>
+          <About/>
+        </div>
+        <div className='hidden md:block'>
+          <ProgressBar/>
+          <ProfilePic/>
+        </div>
+      </div>
+    </div>
   )
 }
 
