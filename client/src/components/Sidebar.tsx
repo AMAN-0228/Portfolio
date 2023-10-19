@@ -35,7 +35,7 @@ const Sidebar = () => {
   ]
   return (
     <>
-      <div className=" w-[90px] h-screen border-r-[1px] fixed left-0 top-[90px] flex flex-col items-center justify-around">
+      <div className=" w-[90px] h-screen bg-white border-r-[1px] fixed left-0 top-[90px] flex flex-col items-center justify-around">
         <h2 className="-rotate-90 tracking-widest font-normal">HOMEPAGE</h2>
         <div className="flex flex-col gap-7 mb-10 text-[20px] text-black">
           {

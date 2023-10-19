@@ -24,10 +24,11 @@ const Header = () => {
     ];
     return (
         <div className="flex items-center fixed bg-white justify-between w-full top-0 left-0 border-b-[1px]">
-            <div className="w-[90px] h-[90px] bg-black">
-                <img src="/logo.png"
+            <div className="w-[90px] h-[90px] bg-black text-center">
+                {/* <img src="/logo.png"
                     alt="logo"
-                    className="p-7" />
+                    className="p-7" /> */}
+                    <h2 className='text-[60px] font-semibold md:font-black text-white'>A</h2>
             </div>
             {/* Desktop Navigation */}
             <div className="hidden  gap-14 items-center mr-3 sm:flex">
