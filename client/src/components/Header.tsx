@@ -1,25 +1,25 @@
 import { useState } from 'react'
 // import {AiOutlineBars} from 'react-icons/ai'
 import { BsFillDoorClosedFill, BsFillDoorOpenFill } from 'react-icons/bs'
-
+// import { Link } from 'react-scroll';
 const Header = () => {
     const [toggle, setToggle] = useState<boolean>(false);
     const menu = [
         {
             id: 1,
-            name: "HOME",
+            name: "home",
         },
         {
             id: 2,
-            name: "SKILLS",
+            name: "skills",
         },
         {
             id: 3,
-            name: "PROJECTS",
+            name: "project",
         },
         {
             id: 4,
-            name: "CONTACT",
+            name: "contact",
         },
     ];
     return (
@@ -36,8 +36,9 @@ const Header = () => {
                     return (
                         <div
                             key={item.id}
-                            className="hover:cursor-pointer hover:underline font-medium ">
-                            {item.name}
+                            className="hover:cursor-pointer hover:underline font-medium uppercase">
+                                {/* <Link to={item.name} spy={true}  offset={-100} smooth={true} duration={500}>{item.name}</Link> */}
+                                <a href={`#${item.name}`}>{item.name}</a>
                         </div>
                     )
                 })}
@@ -55,7 +56,8 @@ const Header = () => {
                                     key={item.id}
                                     onClick={()=>setToggle(false)}
                                     className='text-3xl uppercase cursor-pointer mt-5 hover:text-slate-500'>
-                                    {item.name}
+                                        {/* <Link onClick={()=>setToggle(false)} spy={true}  to={item.name} offset={-90} smooth={true} duration={500}>{item.name}</Link> */}
+                                        <a href={`#${item.name}`}>{item.name}</a>
                                 </div>
                             )
                         })}

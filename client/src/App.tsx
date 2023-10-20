@@ -6,12 +6,12 @@ function App() {
 
   return (
   
-    <div className='w-screen'>
+    <div className=''>
       <Header />
       <Sidebar/>
       
       <Home/>
-      
+
     </div>
   )
 }

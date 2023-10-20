@@ -1,5 +1,6 @@
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import {BsFillFileEarmarkArrowDownFill} from 'react-icons/bs'
+import {HiMail} from 'react-icons/hi'
 
 const Sidebar = () => {
   const links =[
@@ -30,8 +31,16 @@ const Sidebar = () => {
         ),
         href:"/AmanKantSahu_resume.pdf",
         download: true
-      }
-
+      },
+      {
+        id:4,
+        child:(
+          <>
+          <HiMail className="cursor-pointer hover:scale-110 transition-all ease-in-out" />
+          </>
+        ),
+        href:"mailto:amansahu5051@gmail.com",
+      },
   ]
   return (
     <>

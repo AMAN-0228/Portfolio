@@ -52,7 +52,7 @@ const Skills = () => {
     },
   ]
   return (
-    <div  className="w-full px-4 md:px-12 my-[122px] flex-col justify-center items-center ">
+    <div id='skills' className="w-full mx-auto px-4 md:px-12 my-[122px] flex-col justify-center items-center ">
         {/* Heading start */}
       <div className="w-full flex gap-4 justify-center items-center">
         <div className='h-[7px] w-[20px] rounded-full bg-green-600'></div>
@@ -66,7 +66,7 @@ const Skills = () => {
       <div className='mt-[32px] md:mt-[44px] grid grid-cols-2 md:grid-cols-3 gap-12'>
         {
           skills.map((skill)=>(
-            <div key={skill.id} className={`shadow-md rounded-lg text-center flex flex-col justify-between items-center ${skill.style}`}>
+            <div key={skill.id} className={`shadow-md hover:cursor-pointer hover:scale-110 rounded-lg duration-300 text-center flex flex-col justify-between items-center ${skill.style}`}>
               <img 
               className='w-[90px] mt-4 mx-auto md:w-[130px]'
               src={skill.src} alt={`${skill.title}'s image`} />
