@@ -3,7 +3,7 @@ import projects from '../share/projectsdetails'
 const Projects = () => {
 
     return (
-        <div id='project' className='h-screen flex px-20 flex-col items-center'>
+        <div id='project' className='flex px-20 flex-col items-center'>
             <div className='flex items-center full'>
                 <h2 className='uppercase tracking-widest  text-2xl font-semibold'>
                     <span className='text-4xl  text-slate-600 font-bold'>Pro</span>ject

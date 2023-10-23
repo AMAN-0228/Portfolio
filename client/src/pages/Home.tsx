@@ -4,7 +4,7 @@ import ProfilePic from "../components/ProfilePic"
 import ProgressBar from "../components/ProgressBar"
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
-
+import Contact from '../components/Contact'
 const Home = () => {
   return (
     <div className='ml-[90px] md:grid md:grid-cols-3'>
@@ -13,6 +13,7 @@ const Home = () => {
           <About/>
           <Skills/>
           <Projects/>
+          <Contact/>
         </div>
         <div className='hidden md:block '>
           <ProgressBar/>

@@ -4,6 +4,7 @@ import realspace from '../assets/project-imgs/realspace.png'
 import Ecom from '../assets/project-imgs/E-com.png'
 import sdc from '../assets/project-imgs/sdc.png'
 import extension from '../assets/project-imgs/Chrome-extension.png'
+import hoobank from '../assets/project-imgs/hoobank.png'
 
 export default [
     {
@@ -60,10 +61,10 @@ export default [
     },
     {
         id:8,
-        title:"hoobank",
-        site:"#",
+        title:"Modern Bank",
+        site:"https://modernbank01.netlify.app/",
         code:"https://github.com/AMAN-0228/hoobank",
-        src:"img"
+        src:hoobank
     },
 ]
 

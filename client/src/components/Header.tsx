@@ -23,12 +23,12 @@ const Header = () => {
         },
     ];
     return (
-        <div className="flex items-center fixed bg-white justify-between w-full top-0 left-0 border-b-[1px]">
+        <div className="z-[5] flex items-center fixed bg-white justify-between w-full top-0 left-0 border-b-[1px]">
             <div className="w-[90px] h-[90px] bg-black text-center">
                 {/* <img src="/logo.png"
                     alt="logo"
                     className="p-7" /> */}
-                    <h2 className='text-[60px] font-semibold md:font-black text-white'>A</h2>
+                <h2 className='text-[60px] font-semibold md:font-black text-white'>A</h2>
             </div>
             {/* Desktop Navigation */}
             <div className="hidden  gap-14 items-center mr-3 sm:flex">
@@ -37,15 +37,15 @@ const Header = () => {
                         <div
                             key={item.id}
                             className="hover:cursor-pointer hover:underline font-medium uppercase">
-                                {/* <Link to={item.name} spy={true}  offset={-100} smooth={true} duration={500}>{item.name}</Link> */}
-                                <a href={`#${item.name}`}>{item.name}</a>
+                            {/* <Link to={item.name} spy={true}  offset={-100} smooth={true} duration={500}>{item.name}</Link> */}
+                            <a href={`#${item.name}`} >{item.name}</a>
                         </div>
                     )
                 })}
             </div>
 
             {/* mobile Navigation */}
-            <div className='md:hidden h-screen w-screen fixed bg-white left-[-105%] top-[91px]' style={{ left: toggle ? '0' : '-105%' }}>
+            <div className=' md:hidden h-screen w-screen fixed bg-white left-[-105%] top-[90px]' style={{ left: toggle ? '0' : '-105%' }}>
                 {
                     toggle &&
                     <div className='flex flex-col gap-5 justify-center text-center'>
@@ -54,14 +54,14 @@ const Header = () => {
                             return (
                                 <div
                                     key={item.id}
-                                    onClick={()=>setToggle(false)}
+                                    onClick={() => setToggle(false)}
                                     className='text-3xl uppercase cursor-pointer mt-5 hover:text-slate-500'>
-                                        {/* <Link onClick={()=>setToggle(false)} spy={true}  to={item.name} offset={-90} smooth={true} duration={500}>{item.name}</Link> */}
-                                        <a href={`#${item.name}`}>{item.name}</a>
+                                    {/* <Link onClick={()=>setToggle(false)} spy={true}  to={item.name} offset={-90} smooth={true} duration={500}>{item.name}</Link> */}
+                                    <a href={`#${item.name}`}>{item.name}</a>
                                 </div>
                             )
                         })}
-                       
+
                     </div>
                 }
             </div>

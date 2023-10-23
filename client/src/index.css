@@ -2,10 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.flex-col{
-  @apply flex 
+.flexCenter{
+  @apply flex items-center justify-center
+}
+
+.flexStart{
+  @apply flex items-center justify-start
 }
 
 .page_main_containers{
   @apply flex flex-col px-24 py-44 mt-12 text-center items-center
+}
+
+.inputBox{
+  @apply relative my-5 ;
+
+}
+.inputBox input ,.inputBox textarea{
+  @apply border-2 border-slate-500 relative py-1 px-5 rounded-md 
+}
+
+.inputBox textarea:focus~label,
+.inputBox textarea:valid~label,
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+  transform: translateY(50%,);
+  transform: translate(10px,-50%);
+  font-size: 12px;
+  transition: all 1s;
+  padding-inline: 2px;
+  background-color: #ffffff;
+  /* border-inline: 1px solid gray; */
+}
+.inputLabel{
+  @apply absolute  top-0 left-0 px-5 py-1 cursor-text
+
+}
+
+.labelTransition{
+  @apply transition-all ease-in 
 }
